@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --height-header: '50px';
+}
+
+.page {
+    @apply flex items-center justify-center px-1 sm:px-10;
+    min-height: calc(100vh - (var(--height-header)));
+}
