@@ -1,7 +1,6 @@
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import React from "react";
-import HeaderAuthorized from "@/components/Layouts/HeaderAuthorized/HeaderAuthorized";
 import ASide from "@/components/Layouts/aSide/aSide";
 import './globals.css'
 
@@ -20,7 +19,6 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={inter.className}>
-            {/*<HeaderAuthorized/>*/}
             <ASide/>
             {children}
         </body>
