@@ -1,0 +1,16 @@
+.form {
+  @apply shadow-2xl shadow-blue-400 py-10 px-5 flex justify-between flex-col rounded-lg min-w-80 w-full sm:w-8/12 lg:w-5/12 xl:w-3/12;
+  > .header {
+    @apply text-3xl text-center;
+  }
+}
+.field {
+  @apply border outline-0 p-2 font-medium flex-1;
+}
+.field_password {
+  @apply border outline-0 p-2 pr-10 font-medium flex-1;
+}
+
+.btn {
+  @apply bg-black w-full bg-opacity-5 text-black p-2 mt-4 rounded-lg;
+}

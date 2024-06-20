@@ -3,7 +3,6 @@ import {Inter} from "next/font/google";
 import React from "react";
 import HeaderAuthorized from "@/components/Layouts/HeaderAuthorized/HeaderAuthorized";
 import ASide from "@/components/Layouts/aSide/aSide";
-import './globals.css'
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -18,12 +17,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-        <body className={inter.className}>
-            {/*<HeaderAuthorized/>*/}
-            <ASide/>
+        <>
+            <HeaderAuthorized name="Еженедельный итог" description="Ваши траты на текущий момент"/>
             {children}
-        </body>
-        </html>
+        </>
     );
 }
