@@ -1,10 +1,10 @@
 'use client'
 import React, {FC} from 'react';
 import styles from './menuNotification.module.scss';
-import ListNotification from "@/components/Layouts/MenuNotification/ListNotification/ListNotification";
+import {ListNotification} from "@/components/Layouts/MenuNotification/ListNotification";
 import {Close} from "@mui/icons-material";
 import cn from 'classnames';
-import ListMessage from "@/components/Layouts/MenuNotification/ListMessage/ListMessage";
+import {ListMessage} from "@/components/Layouts/MenuNotification/ListMessage";
 interface MenuNotificationProps {
     show: boolean;
     type: 'message' | 'notification',

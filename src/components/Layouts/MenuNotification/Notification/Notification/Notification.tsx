@@ -2,8 +2,8 @@
 import React, {useState} from 'react';
 import styles from './notification.module.scss'
 import {Close, StarBorder} from "@mui/icons-material";
-import Indicator from "@/components/Layouts/Indicator/Indicator";
-const Notification = () => {
+import {Indicator} from "@/components/Layouts/Indicator";
+export const Notification = () => {
     const [isNew, setIsNew] = useState(true)
     return (
         <div className={styles.notification} onMouseMove={() => {
@@ -27,5 +27,3 @@ const Notification = () => {
         </div>
     );
 };
-
-export default Notification;

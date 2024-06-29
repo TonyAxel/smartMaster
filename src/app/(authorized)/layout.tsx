@@ -1,7 +1,7 @@
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import React from "react";
-import ASide from "@/components/Layouts/aSide/aSide";
+import {ASide} from "@/components/Layouts/aSide";
 import './globals.css'
 
 const inter = Inter({subsets: ["latin"]});

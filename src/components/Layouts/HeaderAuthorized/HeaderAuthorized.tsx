@@ -3,9 +3,9 @@ import React, {FC, useState} from 'react';
 import styles from './headerAuthorized.module.scss'
 import {EmailOutlined, NotificationsNoneOutlined} from "@mui/icons-material";
 import Image from "next/image";
-import Indicator from "@/components/Layouts/Indicator/Indicator";
+import {Indicator} from "@/components/Layouts/Indicator";
 import MenuNotification from "@/components/Layouts/MenuNotification/MenuNotification";
-const HeaderAuthorized: FC<{name: string, description?: string}> = ({name}) => {
+export const HeaderAuthorized: FC<{name: string, description?: string}> = ({name}) => {
     const [notification, setNotification] = useState(false)
     const [messages, setMessages] = useState(false)
     const [typeNotification, setTypeNotification] = useState<'message' | 'notification'>('message')
@@ -60,5 +60,3 @@ const HeaderAuthorized: FC<{name: string, description?: string}> = ({name}) => {
         </>
     );
 };
-
-export default HeaderAuthorized;

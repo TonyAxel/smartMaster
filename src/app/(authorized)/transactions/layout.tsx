@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import React from "react";
-import HeaderAuthorized from "@/components/Layouts/HeaderAuthorized/HeaderAuthorized";
+import {HeaderAuthorized} from "@/components/Layouts/HeaderAuthorized";
 
 
 export const metadata: Metadata = {
