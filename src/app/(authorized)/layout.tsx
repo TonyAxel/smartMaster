@@ -6,10 +6,10 @@ import './globals.css'
 
 const inter = Inter({subsets: ["latin"]});
 
-export const metadata: Metadata = {
-    title: "SmartMaster",
-    description: "Только ты контролируешь свою жизнь.",
-};
+// export const metadata: Metadata = {
+//     title: "SmartMaster",
+//     description: "Только ты контролируешь свою жизнь.",
+// };
 
 export default function RootLayout({
                                        children,
@@ -18,10 +18,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body className={inter.className}>
-            <ASide/>
-            {children}
-        </body>
+            <body className={inter.className}>
+                <ASide/>
+                {children}
+            </body>
         </html>
     );
 }

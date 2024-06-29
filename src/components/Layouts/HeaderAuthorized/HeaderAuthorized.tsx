@@ -7,6 +7,29 @@ import Indicator from "@/components/Layouts/Indicator/Indicator";
 import MenuNotification from "@/components/Layouts/MenuNotification/MenuNotification";
 const HeaderAuthorized: FC<{name: string, description?: string}> = ({name}) => {
     const [notification, setNotification] = useState(false)
+    const [messages, setMessages] = useState(false)
+    const [typeNotification, setTypeNotification] = useState<'message' | 'notification'>('message')
+
+    const toggleNotification = () => {
+        setMessages(false)
+        setNotification((notification) => !notification)
+        setTypeNotification("notification")
+    }
+
+    const toggleMessage = () => {
+        setNotification(false)
+        setMessages((messages) => !messages)
+        setTypeNotification("message")
+    }
+
+    const toggleClose = () => {
+        setMessages(false)
+        setNotification(false)
+    }
+    const toggleCloseOutside = () => {
+        setNotification(false)
+        setMessages(false)
+    }
 
     return (
         <>
@@ -16,11 +39,11 @@ const HeaderAuthorized: FC<{name: string, description?: string}> = ({name}) => {
                 </div>
                 <div className={styles.info_user}>
                     <div className={styles.notifications}>
-                        <div className={styles.message}>
+                        <div className={styles.message} onClick={() => toggleMessage()}>
                             <EmailOutlined/>
                             <Indicator className={styles.indicator}/>
                         </div>
-                        <div className={styles.notification} onClick={() => setNotification((value) => !value)}>
+                        <div className={styles.notification} onClick={() => toggleNotification()}>
                             <NotificationsNoneOutlined/>
                             <Indicator className={styles.indicator}/>
                         </div>
@@ -31,7 +54,9 @@ const HeaderAuthorized: FC<{name: string, description?: string}> = ({name}) => {
                     </div>
                 </div>
             </header>
-            <MenuNotification show={notification} />
+            <MenuNotification toggleClose={toggleClose} show={notification} type={typeNotification}/>
+            <MenuNotification toggleClose={toggleClose} show={messages} type={typeNotification}/>
+            <div className={styles.menu_notification_outside} onClick={() => toggleCloseOutside()}></div>
         </>
     );
 };

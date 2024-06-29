@@ -1,0 +1,22 @@
+.message {
+  @apply flex items-center gap-4 border p-2 rounded-lg relative cursor-pointer
+}
+.close {
+  @apply absolute flex justify-center items-center -top-2.5 -left-2.5 bg-sky-500 rounded-full border-white border-2 text-white;
+  > * {
+    @apply text-lg
+  }
+}
+.avatar_image {
+  @apply rounded-full overflow-hidden h-10 w-10;
+}
+.indicator {
+  @apply -top-1 -end-1;
+}
+.name {
+
+}
+
+.description {
+  @apply text-xs text-gray-400 font-medium;
+}

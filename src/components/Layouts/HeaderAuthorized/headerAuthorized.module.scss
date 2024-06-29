@@ -43,3 +43,8 @@
 .avatar {
   @apply rounded-full overflow-hidden h-10 w-10;
 }
+
+.menu_notification_outside {
+  @apply absolute w-full;
+  height: calc(100% - var(--height-header));
+}
