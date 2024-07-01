@@ -56,7 +56,10 @@ const HeaderAuthorized: FC<{name: string, description?: string}> = ({name}) => {
             </header>
             <MenuNotification toggleClose={toggleClose} show={notification} type={typeNotification}/>
             <MenuNotification toggleClose={toggleClose} show={messages} type={typeNotification}/>
-            <div className={styles.menu_notification_outside} onClick={() => toggleCloseOutside()}></div>
+            {
+                notification || messages &&
+                <div className={styles.menu_notification_outside} onClick={() => toggleCloseOutside()}></div>
+            }
         </>
     );
 };

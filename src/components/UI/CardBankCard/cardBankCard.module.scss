@@ -1,0 +1,60 @@
+.card {
+  @apply p-5 shadow-xl rounded-xl
+}
+.list_card {
+  @apply pr-8 border-r-2 flex;
+  &_row {
+    @apply flex flex-col justify-center text-sky-600;
+    &_btn {
+      @apply cursor-pointer;
+    }
+  }
+}
+
+.info {
+  @apply flex mt-5
+}
+.title_description {
+  @apply font-bold text-2xl
+}
+
+.list_info_money {
+  @apply ml-8 flex flex-col justify-between;
+}
+
+.info_money {
+  @apply grid justify-end;
+}
+
+.title_current_balance {
+  @apply font-medium text-2xl text-sky-600 text-end;
+}
+
+.title_income_balance {
+  @apply font-medium text-xl text-green-600 text-end;
+}
+
+.title_outcome_balance {
+  @apply font-medium text-xl text-red-600 text-end;
+}
+
+.description_title_info_money {
+  @apply text-xs text-gray-400 text-end;
+}
+
+.progress_limit {
+  @apply w-full h-3 bg-gray-200 rounded-full mt-5;
+  &_fill {
+    @apply bg-green-600 rounded-full h-3 w-5;
+  }
+}
+
+.progress_info {
+  @apply flex justify-between mt-2;
+  &_title {
+    @apply text-xs text-gray-400
+  }
+  &_money {
+    @apply text-sm font-medium;
+  }
+}
