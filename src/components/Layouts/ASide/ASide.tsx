@@ -6,7 +6,7 @@ import {usePathname} from "next/navigation";
 import cn from 'classnames'
 import {ROUTERS} from "@/Router/Routers";
 
-export const ASide = () => {
+const ASide = () => {
 
     const pathname = usePathname()
 
@@ -45,3 +45,4 @@ export const ASide = () => {
     );
 };
 
+export default ASide;

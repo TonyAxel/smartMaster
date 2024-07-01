@@ -1,1 +1,0 @@
-export {HeaderAuthorized} from './HeaderAuthorized'

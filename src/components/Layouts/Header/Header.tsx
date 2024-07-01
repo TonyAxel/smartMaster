@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './header.module.scss'
 import Link from "next/link";
 import Image from "next/image";
-export const Header = () => {
+const Header = () => {
     return (
         <header className={styles.header}>
             <div>
@@ -19,4 +19,6 @@ export const Header = () => {
         </header>
     );
 };
+
+export default Header;
 

@@ -1,1 +1,0 @@
-export {ASide} from './aSide'

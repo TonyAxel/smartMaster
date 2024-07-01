@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import styles from './message.module.scss'
 import {Close} from "@mui/icons-material";
-import {Indicator} from "@/components/Layouts/Indicator";
 import Image from "next/image";
-export const Message = () => {
+import Indicator from "@/components/Layouts/Indicator/Indicator";
+const Message = () => {
     const [isNew, setIsNew] = useState(true)
     return (
         <div className={styles.message} onMouseMove={() => {
@@ -29,3 +29,5 @@ export const Message = () => {
         </div>
     );
 };
+
+export default Message;
