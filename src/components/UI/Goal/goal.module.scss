@@ -1,0 +1,23 @@
+.goal {
+  @apply shadow-xl rounded-2xl min-w-44 p-5 flex flex-col justify-between;
+}
+
+.price {
+  @apply text-3xl;
+}
+
+.info {
+  @apply mb-5;
+}
+
+.date {
+  @apply text-sm text-gray-400;
+}
+
+.title {
+  @apply text-xs mt-2;
+}
+
+.icon {
+  @apply text-3xl text-amber-600;
+}

@@ -1,4 +1,4 @@
 .page {
-  @apply flex ml-0 sm:ml-64 sm:px-10;
+  @apply flex ml-0 sm:ml-64 sm:px-10 gap-10;
   min-height: calc(100vh - (var(--height-header)));
 }
